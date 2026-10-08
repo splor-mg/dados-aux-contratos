@@ -1,0 +1,143 @@
+{
+  "name": "dados_aux_contratos",
+  "title": "Portal de Compras - SIAD",
+  "resources": [
+    {
+      "name": "aux_contratos",
+      "type": "table",
+      "path": "data/aux_contratos.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:2da175cde866755c663146565bb23fef4d107c32ff701241e4a9a8c322b1fa2e",
+      "bytes": 2051668,
+      "fields": 12,
+      "rows": 6421,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "ano_processo",
+            "type": "string",
+            "title": "Ano do Processo",
+            "description": "Ano do processo de compra.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "uo_cod",
+            "type": "string",
+            "title": "Unidade Orçamentária - Código",
+            "description": "Código representativo da unidade orçamentária.\n",
+            "constraints": {
+              "required": true,
+              "pattern": "^[1-9]\\d{3}$"
+            }
+          },
+          {
+            "name": "num_contrato_saida",
+            "type": "string",
+            "title": "Contrato/Convênio Saída",
+            "description": "Número atribuído pelo SIAFI-MG ao contrato/convênio de saída cadastrado no subsistema Rotina Administrativa.\n",
+            "constraints": {
+              "pattern": "^(0|[1-9]\\d{0,6})$"
+            }
+          },
+          {
+            "name": "objeto_contrato",
+            "type": "string",
+            "title": "Objeto Contrato",
+            "description": ".\n",
+            "constraints": {
+              "maxLength": 5000
+            }
+          },
+          {
+            "name": "situcao_contrato",
+            "type": "string",
+            "title": "Situação Contrato",
+            "description": ".\n",
+            "constraints": {
+              "maxLength": 500
+            }
+          },
+          {
+            "name": "tipo_contrato_desc",
+            "type": "string",
+            "title": "Descrição Tipo de Contrato",
+            "description": ".\n",
+            "constraints": {
+              "maxLength": 500
+            }
+          },
+          {
+            "name": "data_inicio_vigencia",
+            "type": "string",
+            "title": "Data Início Vigência Contrato",
+            "description": ".\n",
+            "constraints": {
+              "maxLength": 500
+            }
+          },
+          {
+            "name": "data_termino_vigencia",
+            "type": "string",
+            "title": "Data Término Vigência Contrato",
+            "description": ".\n",
+            "constraints": {
+              "maxLength": 500
+            }
+          },
+          {
+            "name": "num_processo_compra",
+            "type": "string",
+            "title": "Número Processo Compra SIAD",
+            "description": "Número de identificação formatado do processo de compra SIAD.\n",
+            "missingValues": [
+              " /"
+            ],
+            "constraints": {
+              "pattern": "^\\d{7}\\s\\d{6}/\\d{4}$"
+            }
+          },
+          {
+            "name": "objeto_processo_compra",
+            "type": "string",
+            "title": "Objeto Processo",
+            "description": ".\n",
+            "constraints": {
+              "maxLength": 500
+            }
+          },
+          {
+            "name": "vlr_total_homologado",
+            "type": "number",
+            "title": "Valor Total Homologado",
+            "description": ".\n",
+            "constraints": {
+              "minimum": 0
+            }
+          },
+          {
+            "name": "vlr_total_atualizado",
+            "type": "number",
+            "title": "Valor Total Atualizado",
+            "description": ".\n",
+            "constraints": {
+              "minimum": 0
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "owner_org": "secretaria-de-estado-de-planejamento-e-gestao-seplag",
+  "updated_at": "2026-10-08T17:34:51"
+}
