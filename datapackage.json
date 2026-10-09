@@ -10,10 +10,10 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:2da175cde866755c663146565bb23fef4d107c32ff701241e4a9a8c322b1fa2e",
-      "bytes": 2051668,
+      "hash": "sha256:9a05a8ff4d0f1eba2c2c618b8dd43de9e5f73afb7a0e538ebd5927efbf2a504f",
+      "bytes": 2051925,
       "fields": 12,
-      "rows": 6421,
+      "rows": 6422,
       "dialect": {
         "csv": {
           "delimiter": ","
@@ -28,7 +28,7 @@
             "description": "Ano do processo de compra.\n",
             "constraints": {
               "required": true,
-              "pattern": "^[1-9]\\d{3}$"
+              "pattern": "^[1-2]\\d{3}$"
             }
           },
           {
@@ -71,8 +71,8 @@
           {
             "name": "tipo_contrato_desc",
             "type": "string",
-            "title": "Descrição Tipo de Contrato",
-            "description": ".\n",
+            "title": "Descrição Tipo Contrato",
+            "description": "Descrição do tipo de contrato.\n",
             "constraints": {
               "maxLength": 500
             }
@@ -139,5 +139,5 @@
     }
   ],
   "owner_org": "secretaria-de-estado-de-planejamento-e-gestao-seplag",
-  "updated_at": "2026-10-08T17:34:51"
+  "updated_at": "2026-10-09T17:10:54"
 }
